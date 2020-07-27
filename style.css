@@ -1,0 +1,54 @@
+h4{color:goldenrod;}
+        h3{color:gold}
+        p{color: khaki; font-size: 18px; line-height: 12px;}
+        .info {color: khaki; font-size: 18px; line-height: 24px;}
+        .footer {padding: 30px; background: black;  text-align: center;}
+        
+        a:link {
+            color: goldenrod;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: goldenrod;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: maroon;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        body {background-image: url('./img/1.png'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+        /* Style the links inside the navigation bar */
+.topnav { position: fixed; width: 100%;}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+ 
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: goldenrod;
+  color: maroon;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: goldenrod;
+  color: maroon;
+}
