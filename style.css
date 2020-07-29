@@ -6,6 +6,7 @@ h4{color:goldenrod;}
         img:hover {
           box-shadow: 0 0 2px 2px #ffffff8a;
           transition: .3s;
+          cursor: pointer;
         }
         a:link {
             color: goldenrod;
