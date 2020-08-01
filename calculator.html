@@ -33,34 +33,15 @@
     box-shadow: 0px 0px 31px 75px rgba(0,0,0,1);">
         <div class="row">
             <div class="col-5">
-                <h3>Снаряжение</h3>
+                <h3>Equipment</h3>
                 <hr>
-                <h4>Броня</h4>
+                <h4>Armor</h4>
                 <div class="row">
                     <div class="col-4"> </div>
                     <div class="col-4">
                         <img src="./img/Helmet.png" alt="Helmet" data-toggle="modal" data-target="#exampleModal" class="img-hover" > 
                     </div>
-                    <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Helmets</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
                     <div class="col-4"> </div>
                 </div>
 
@@ -91,7 +72,7 @@
                     </div>
                 </div>
                     <hr>
-                <h4>Аксессуары</h4>
+                <h4>Accessories</h4>
                 <div class="row">
                     <div class="col-3"><img src="./img/Suit.png" alt="Suit" class="img-hover"></div>
                     <div class="col-3"><img src="./img/Necklace.png" alt="Necklace" class="img-hover"></div>
@@ -99,7 +80,7 @@
                     <div class="col-3"><img src="./img/Ring.png" alt="Ring2" class="img-hover"></div>
                 </div>
                 <hr>
-                <h4>Оружие</h4>
+                <h4>Weapon</h4>
                 <div class="row">
                     <div class="col-3">
                         <img src="./img/Weapon1.png" alt="Weapon1" class="img-hover"> <br><br> 
@@ -119,23 +100,28 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col-7">
-            <h3>Характеристики</h3>    
-            <p>Макс. магия</p>
-            <p>Восст. магии</p>
-            <p>Макс. здоровье</p>
-            <p>Восст. здоровья</p>
-            <p>Макс. запас сил</p>
-            <p>Восст. запаса сил</p>
+            <h3>Сharacteristic</h3>    
+            <p>Maximum Magicka </p> 
+            <p>Magicka Recovery</p>
+            <p>Maximum Health</p>
+            <p>Health Recovery</p>
+            <p>Maximum Stamina</p>
+            <p>Stamina Recovery</p>
             <br>
-            <p>Сила заклинаний</p>
-            <p>Крит. рейтинг заклинаний</p>
-            <p>Сила оружия</p>
-            <p>Крит. рейтинг оружия</p>
+            <p>Spell Damage</p>
+            <p>Spell Critical</p>
+            <p>Weapon Damage</p>
+            <p>Weapon Critical</p>
             <br>
-            <p>Маг. сопротивляемость</p>
-            <p>Физ. сопротивляемость</p>
-            <p>Сопротивл. крит. урону</p>
+            <p>Spell Resistance</p>
+            <p>Physical Resistance</p>
+            <p>Critical Resistance</p>
+            <p style="color: maroon;">Unique Stats (Sets): </p>
+            <div class="col-7"> 
+                <p id='maximumMagicka'></p>
+            </div>
 
         </div>
         </div>
@@ -162,7 +148,28 @@
        <br>
     
     </footer>
-
+                   <!-- Modal -->
+                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Helmets</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Характеристики персонажа-->
+                  <script src="Characteristics .js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -1,0 +1,1 @@
+function Hello() {document.getElementById('hello').innerHTML = 'Hello Mf' ;} 
