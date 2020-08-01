@@ -3,7 +3,9 @@ h4{color:goldenrod;}
         p{color: khaki; font-size: 18px; line-height: 12px;}
         .info {color: khaki; font-size: 18px; line-height: 24px;}
         .footer {padding: 30px; background: black;  text-align: center;}
-        .dd1, .dd2, .dd3 {display: inline;}
+        .dd1, .dd2, .dd3, .dd4 {display: inline;}
+
+
         
         .img-hover:hover {
           box-shadow: 0 0 2px 2px #ffffff8a;
