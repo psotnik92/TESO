@@ -102,27 +102,49 @@
             </div>
             
             <div class="col-7">
-            <h3>Сharacteristic</h3>    
-            <p>Maximum Magicka </p> 
-            <p>Magicka Recovery</p>
-            <p>Maximum Health</p>
-            <p>Health Recovery</p>
-            <p>Maximum Stamina</p>
-            <p>Stamina Recovery</p>
-            <br>
-            <p>Spell Damage</p>
-            <p>Spell Critical</p>
-            <p>Weapon Damage</p>
-            <p>Weapon Critical</p>
-            <br>
-            <p>Spell Resistance</p>
-            <p>Physical Resistance</p>
-            <p>Critical Resistance</p>
-            <p style="color: maroon;">Unique Stats (Sets): </p>
-            <div class="col-7"> 
-                <p id='maximumMagicka'></p>
-            </div>
-
+            <h3>Сharacteristic</h3>
+            <div class="row">    
+                <div class='col-9'>
+                    <h4>Attributes</h4> 
+                    <p>Health</p>
+                    <p>Mana</p>
+                    <p>Stamina</p>
+                    <h4>Parameters</h4> 
+                    <p>Maximum Magicka </p> 
+                    <p>Magicka Recovery</p>
+                    <p>Maximum Health</p>
+                    <p>Health Recovery</p>
+                    <p>Maximum Stamina</p>
+                    <p>Stamina Recovery</p>
+                    <br>
+                    <p>Spell Damage</p>
+                    <p>Spell Critical</p>
+                    <p>Weapon Damage</p>
+                    <p>Weapon Critical</p>
+                    <br>
+                    <p>Spell Resistance</p>
+                    <p>Physical Resistance</p>
+                    <p>Critical Resistance</p>
+                    <p style="color: maroon;">Unique Stats (Sets): </p>
+                </div>
+                    <div class="col-3"> 
+                    <p id='maximumMagicka' style="margin-top: 156px;"></p>
+                    <p id='magickaRecovery'></p>
+                    <p id='maximumHealth'></p>
+                    <p id='healthRecovery'></p>
+                    <p id='maximumStamina'></p>
+                    <p id='staminaRecovery'></p>
+                    <br>
+                    <p id='spellDamage'></p>
+                    <p id='spellCritical'></p>
+                    <p id='weaponDamage'></p>
+                    <p id='weaponCritical'></p>
+                    <br>
+                    <p id='spellResistance'></p>
+                    <p id='physicalResistance'></p>
+                    <p id='criticalResistance'></p>
+                            </div>
+            </div>                    
         </div>
         </div>
     </div>
@@ -149,6 +171,8 @@
     
     </footer>
                    <!-- Modal -->
+                  
+                  
                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
@@ -159,7 +183,46 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          ...
+                            
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Grade
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#" style="color: blue; font-weight: 500;">Superior</a>
+                                  <a class="dropdown-item" href="#" style="color: blueviolet; font-weight: 500;">Epic</a>
+                                  <a class="dropdown-item" href="#" style="color: gold; font-weight: 500;">Legendary</a>
+                                  <a class="dropdown-item" href="#" style="color:red; font-weight: 500;">Mythic</a>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Trait
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="color: black; font-weight: 500;">
+                                      <a class="dropdown-item" href="#" style="color: black; font-weight: 500;">Divines</a>
+                                      <a class="dropdown-item" href="#" style="color: black; font-weight: 500;">Invigorating</a>
+                                      <a class="dropdown-item" href="#" style="color: black; font-weight: 500;">Impenetrable</a>
+                                      <a class="dropdown-item" href="#" style="color: black; font-weight: 500;">Infused</a>
+                                      <a class="dropdown-item" href="#" style="color: black; font-weight: 500;">Nirnhoned</a>
+                                      <a class="dropdown-item" href="#" style="color: black; font-weight: 500;">Reinforced</a>
+                                      <a class="dropdown-item" href="#" style="color: black; font-weight: 500;">Sturdy</a>
+                                      <a class="dropdown-item" href="#" style="color: black; font-weight: 500;">Training</a>
+                                      <a class="dropdown-item" href="#" style="color: black; font-weight: 500;">Well-Fitted</a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Glyphs
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#" style="color: red; font-weight: 500;">Glyph of Health</a>
+                                  <a class="dropdown-item" href="#" style="color: blue; font-weight: 500;">Glyph of Magicka</a>
+                                  <a class="dropdown-item" href="#" style="color: green; font-weight: 500;">Glyph of Stamina</a>
+                                  <a class="dropdown-item" href="#" style="color:goldenrod; font-weight: 500;">Glyph of Prismatic Defense</a>
+                                </div>
+                                <br>
+                          Choose the grade, trait and glyph
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
