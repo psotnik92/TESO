@@ -34,7 +34,7 @@ armor_config.forEach(function(item) {
     EL.innerHTML = item.title
     dropdown_items.appendChild(EL)
 
-    armor_elements.push(El)
+    armor_elements.push(EL)
 })
 
 
