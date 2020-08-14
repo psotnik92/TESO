@@ -37,6 +37,16 @@ armor_config.forEach(function(item) {
     armor_elements.push(EL)
 }) */
 
+document.querySelector('.helmet').addEventListener('click', function(){
+    
+    armor_config.forEach(function(item){
+        if (item.part == 'Helmet'){
+        var el = document.createElement('div')
+        el.innerHTML = item.title
+        document.querySelector('.dropdown-items').appendChild(el)
+        }
+    })
+
 document.querySelector('.light').addEventListener('click', function(){
     
     armor_config.forEach(function(item){
@@ -69,3 +79,6 @@ document.querySelector('.heavy').addEventListener('click', function(){
         }
     })
 })
+
+})
+
