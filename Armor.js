@@ -82,3 +82,15 @@ document.querySelector('.heavy').addEventListener('click', function(){
 
 })
 
+
+//  var imgList = document.querySelectorAll('.img-hover')
+//  for (var i=0; i<imgList.length; i++) {
+//      var img = imgList[i]
+//      img.onclick = function () {
+    // $('#exampleModal').modal()
+//      }
+//  }
+
+ $('.img-hover').on('click', function() {
+    $('#exampleModal').modal()
+ })
